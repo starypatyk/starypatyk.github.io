@@ -27,7 +27,7 @@ Once I saw that after 8°00’W instead of 7°59’W came 9°59’W, I had a mom
 
 Obviously I have never seen the actual code displaying the coordinates in the entertainment system of a plane. But here is my attempt of “reverse engineering” such code.
 
-Most likely the geographic coordinates are retrieved from a GPS system of the plane as a pair of two floating numbers – one for latitude and one for longitude. Since I have been crossing the prime meridian, but not the equator we will discuss only the longitude. A common convention is that positive values of the longitude mean coordinates east of the prime meridian and negative values mean coordinates west of the prime meridian. The float value represents degrees with some fraction that is usually converted into arc minutes (each arc minute is 1/60 of degree) and arc seconds (1/60 of arc minute).
+Most likely the geographic coordinates are retrieved from a GPS system of the plane as a pair of two floating point numbers – one for latitude and one for longitude. Since I have been crossing the prime meridian, but not the equator we will discuss only the longitude. A common convention is that positive values of the longitude mean coordinates east of the prime meridian and negative values mean coordinates west of the prime meridian. The float value represents degrees with some fraction that is usually converted into arc minutes (each arc minute is 1/60 of degree) and arc seconds (1/60 of arc minute).
 
 How could one implement a function to display longitude in a human readable form? For simplicity lets leave out arc seconds and display only degrees and arc minutes.
 
