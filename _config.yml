@@ -26,8 +26,8 @@ url: "https://starypatyk.github.io" # the base hostname & protocol for your site
 # Build settings
 markdown: kramdown
 theme: minima
-plugins:
-  - jekyll-feed
+# plugins:
+#   - jekyll-feed
 
 # Minima date format
 # refer to http://shopify.github.io/liquid/filters/date/ if you want to customize this
